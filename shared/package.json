@@ -1,0 +1,25 @@
+{
+  "name": "shared",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "types": "index.d.js",
+  "exports": {
+    "./Button": "./src/Button.js"
+  },
+  "scripts": {
+    "build": "tsc index.ts --outDir . --declaration --target es2015 --module commonjs --esModuleInterop --jsx react-jsx"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}
